@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+    <header>
+        <h1>DAN MAINA</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT ME</a></li>
+            </ul>
+
+            <br><br><br><button id="mode-toggle">Light Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div id="text">
+                <h1 id="intro">
+                    Hello there, its me, Dan Maina. I am a developer.
+                </h1>
+                <h6>I am a fullstack developer with a passion for creating dynamic and responsive web applications. 
+                    I have experience in both front-end and back-end development, and I am always eager to learn new 
+                    technologies and improve my skills.
+                </h6>
+
+                <button>
+                    Download CV
+                </button>
+            </div>
+
+            <div id="image">
+                <img src="image.png" alt="profile picture">
+            </div>
+        </section>
+
+        <hr id="rule">
+
+        <section id="skills">
+            <h1>
+                My Skills
+            </h1>
+            <div id="skillset">
+                <div class="skill">
+                    <h2>HTML</h2>
+                    <p>Experienced in creating semantic and accessible web pages using HTML5.</p>
+                </div>
+
+                <div class="skill">
+                    <h2>CSS</h2>
+                    <p>Proficient in styling web pages with CSS3, including Flexbox and Grid layouts.</p>
+                </div>
+
+                <div class="skill">
+                    <h2>Tailwind CSS</h2>
+                    <p>Adept at building responsive web designs that work seamlessly across various devices and screen sizes.</p>
+                </div>
+
+                <div class="skill">
+                    <h2>Vite</h2>
+                    <p>Familiar with Vite as a build tool and development server for modern web projects.</p>
+                </div>
+
+                <div class="skill">
+                    <h2>JavaScript</h2>
+                    <p>Skilled in JavaScript for adding interactivity and dynamic content to web applications.</p>
+                </div>
+
+                <div class="skill">
+                    <h2>React</h2>
+                    <p>Experienced in building single-page applications using React.js and its ecosystem.</p>
+                </div>
+
+                <div class="skill">
+                    <h2>Node.js</h2>
+                    <p>Proficient in server-side development with Node.js and Express framework.</p>
+                </div>
+
+                <div class="skill">
+                    <h2>Database Management</h2>
+                    <p>Knowledgeable in working with databases like MongoDB and MySQL for data storage and retrieval.</p>
+                </div>
+                <div class="skill">
+                    <h2>C Data Structures </h2>
+                    <p>Fluent in implementing data structures and algorithms using C programming language.</p>
+                </div>
+                <div class="skill">
+                    <h2>Python</h2>
+                    <p>Proficient in Python programming for various applications, including web development and data analysis.</p>
+                </div>
+                <div class="skill">
+                    <h2>Java programming</h2>
+                    <p>Proficient in Java programming for building robust and scalable applications.</p>
+                </div>
+        </section>
+
+        <hr id="rule">
+
+        <section id="projects">
+            <h1>
+                My Projects
+            </h1>
+            <div id="project-list">
+                <div class="project">
+                    <h2>01 <br>Portfolio Website</h2>
+                    <p>A personal portfolio website showcasing my skills, projects, and contact information. Built with HTML, CSS, and JavaScript.</p>
+                </div>
+
+                <div class="project">
+                    <h2>02 <br>C Data Structures</h2>
+                    <p>A project focused on implementing various data structures and algorithms using the C programming language.</p>
+                </div>
+
+                <div class="project">
+                    <h2>03 <br>Log-In Page</h2>
+                    <p>A log-in page for users to securely access their accounts. Implemented with user authentication and session management.</p>
+                </div>
+        </section>
+
+        <hr id="rule">
+
+        <section id="contact">
+            <h1>
+                Contact Me
+            </h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dan Maina. All rights reserved.</p>
+    </footer>
+
+    <script>
+    const toggleBtn = document.getElementById('mode-toggle');
+    toggleBtn.onclick = function() {
+    document.body.classList.toggle('light-mode');
+    toggleBtn.textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+};
+</script>
+</body>
+</html>

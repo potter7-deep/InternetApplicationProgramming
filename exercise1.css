@@ -1,0 +1,172 @@
+body{
+    background-color: black;
+}
+
+#hero{
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+
+/* #header{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    font-family: Arial, sans-serif;
+
+} */
+
+#header ul li a{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    /* layout: welcome on the left, list on the right */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    /* border-bottom: 2px solid white;
+    font-family: Arial, sans-serif; */
+    text-decoration: none;
+}
+
+/* style lists inside header to appear horizontally on the right */
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* reset list item spacing */
+#header ul li {
+    margin: 0;
+    padding: 0;
+}
+
+/* optional helpers: mark welcome text block */
+#header .welcome {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+/* ensure nav block doesn't shrink */
+#header nav {
+    flex: 0 0 auto;
+}
+
+#header{
+    height: 67px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    /* layout: welcome on the left, list on the right */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* style lists inside header to appear horizontally on the right */
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* reset list item spacing */
+#header ul li a{
+    margin: 0;
+    padding: 0;
+}
+
+/* optional helpers: mark welcome text block */
+#header .welcome {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+/* ensure nav block doesn't shrink */
+#header nav {
+    flex: 0 0 auto;
+}
+
+#header ul li a:hover{
+    cursor: pointer;
+    font-size: 23px;
+    color: green;
+    transition-duration: 1000ms;
+    text-decoration: none;
+}
+
+#main {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#side-bar{
+    background-color: black;
+    font-size: 22px;
+    color: white;
+    padding: 15px;
+    width: 50vw;            /* fixed sidebar width works well for sticky layout */
+    height: 100vh;
+    text-decoration: none;
+    position: sticky;        /* make sidebar stick when scrolling */
+    top: 95px;               /* distance from top when stuck */
+    align-self: flex-start;  /* ensure it stays at the top of the flex container */
+    z-index: 900;
+    align-items: center;
+    text-align: left;
+}
+
+/* remove bullet points and default list spacing */
+#side-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#side-bar ul li {
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+#side-bar ul li:hover{
+    cursor: pointer;
+    font-size: 25px;
+    color: gold;
+    transition-duration: 1000ms;
+    text-decoration: none;
+}
+
+#home , #about, #academics, #research, #students {
+    margin-bottom: 20px;
+    font-size: 30px;
+    /* height: 100vh; */
+    align-items: center;
+    text-align: left;
+    padding-top: 55px;
+}
+
+#home h2, #about h2, #academics h2, #research h2, #students h2 {
+    text-decoration: none;
+    color: gold;
+}

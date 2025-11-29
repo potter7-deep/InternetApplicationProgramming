@@ -1,0 +1,40 @@
+/* Flexbox Navigation */
+/* Styling the navigation list with Flexbox to align items evenly */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: #333;
+  padding: 10px;
+}
+
+/* Styling the links in the navigation bar */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Grid Layout for the products */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.products {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.products img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
